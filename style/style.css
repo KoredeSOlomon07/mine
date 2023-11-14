@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+#about, #projects, #contact {
+    margin-bottom: 30px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile navigation menu styles */
+#nav-toggle {
+    display: none;
+}
+
+#nav-menu {
+    display: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Show the toggle button on small screens */
+    #nav-toggle {
+        display: block;
+    }
+
+    /* Show/hide the menu based on button click */
+    #nav-menu {
+        display: block;
+    }
+
+    /* Hide other sections when mobile menu is active */
+    #about, #projects, #contact {
+        display: none;
+    }
+}
